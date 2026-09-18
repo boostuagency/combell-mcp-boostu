@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+# mcp-publisher login writes these auth tokens; never commit them
+.mcpregistry_github_token
+.mcpregistry_registry_token

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.boostuagency/combell-mcp-boostu",
+  "description": "MCP server for the Combell hosting API. Manage domains, DNS, hosting, mail and databases in Claude and other AI assistants.",
+  "repository": {
+    "url": "https://github.com/boostuagency/combell-mcp-boostu",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "combell-mcp-boostu",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "COMBELL_API_KEY", "description": "Your Combell API key (My Combell > API)", "isRequired": true, "isSecret": true },
+        { "name": "COMBELL_API_SECRET", "description": "Your Combell API secret (My Combell > API)", "isRequired": true, "isSecret": true },
+        { "name": "COMBELL_TOOLS", "description": "Comma-separated tool groups to enable (default: all groups)", "isRequired": false, "isSecret": false },
+        { "name": "COMBELL_API_BASE_URL", "description": "API base URL override (default https://api.combell.com)", "isRequired": false, "isSecret": false }
+      ]
+    }
+  ]
+}

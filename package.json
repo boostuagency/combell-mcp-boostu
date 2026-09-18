@@ -1,0 +1,63 @@
+{
+  "name": "combell-mcp-boostu",
+  "version": "1.0.0",
+  "mcpName": "io.github.boostuagency/combell-mcp-boostu",
+  "description": "Open-source MCP server for the Combell hosting API. Manage domains, DNS, Linux and Windows hosting, mailboxes, MySQL databases, SSH keys and SSL certificates from Claude and other AI assistants.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "combell-mcp-boostu": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "combell",
+    "hosting",
+    "dns",
+    "domains",
+    "model-context-protocol",
+    "mcp-server",
+    "ai",
+    "claude",
+    "claude-mcp",
+    "anthropic",
+    "combell-api",
+    "boostu"
+  ],
+  "author": "BoostU Agency <nick@boostu.be> (https://boostu.be)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boostuagency/combell-mcp-boostu.git"
+  },
+  "homepage": "https://github.com/boostuagency/combell-mcp-boostu#readme",
+  "bugs": {
+    "url": "https://github.com/boostuagency/combell-mcp-boostu/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.9"
+  }
+}
