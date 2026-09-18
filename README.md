@@ -9,17 +9,18 @@
 [![tools](https://img.shields.io/badge/tools-74-2ea44f)](https://www.npmjs.com/package/combell-mcp-boostu)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Made by BoostU](https://img.shields.io/badge/made_by-BoostU-000)](https://boostu.be)
+[![Hosted edition](https://img.shields.io/badge/hosted_edition-combell--mcp.boostu.be-FF5C49)](https://combell-mcp.boostu.be)
+
+> ### Prefer not to self-host?
+> Use the managed, always-on edition at **[combell-mcp.boostu.be](https://combell-mcp.boostu.be)**: paste your Combell API key once, magic-link login, and a one-click connector for Claude. Free during the preview, paid plans after.
+>
+> This repository is the open-source MCP server itself: run it locally with your own Combell API key. The hosted edition adds multi-tenant authentication, a dashboard, usage insights and managed credential storage on top of the same server.
 
 ---
 
 ## 💡 What is this?
 
 `combell-mcp-boostu` is a [Model Context Protocol](https://modelcontextprotocol.io) server that exposes the [Combell API v2](https://api.combell.com/v2/documentation) to AI assistants such as Claude Desktop, Claude Code, Cursor and Windsurf. It provides 74 tools spanning the public Combell surface: accounts and servicepacks, domain names, DNS records, Linux and Windows hosting, scheduled tasks, SSH keys, mailboxes and mail zones, MySQL databases and users, and SSL certificates. Point your AI at it and manage your hosting through natural language.
-
-> ### Prefer not to self-host?
-> Use the managed, always-on edition at **[combell-mcp.boostu.be](https://combell-mcp.boostu.be)**: paste your Combell API key once, magic-link login, and a one-click connector for Claude. Free during the preview, paid plans after.
->
-> This repository is the open-source MCP server itself: run it locally with your own Combell API key. The hosted edition adds multi-tenant authentication, a dashboard, usage insights and managed credential storage on top of the same server.
 
 | | Self-host (this repo) | Managed ([boostu.be](https://combell-mcp.boostu.be)) |
 |---|---|---|
